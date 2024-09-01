@@ -31,11 +31,12 @@ const FireFliesBackground = () => {
         return (
           <div
             key={firefly.id}
-            className="absolute roudned-full w-[10px] h-[10px] bg-firefly-radial"
+            className="absolute rounded-full w-[10px] h-[10px] bg-red-500"
             style={{
               top: firefly.top,
               left: firefly.left,
               animation: `move ${firefly.animationDuration} infinite alternate`,
+              boxShadow: "0 0 10px 5px rgba(255, 0, 0, 0.7)" // Adding glow effect
             }}
           ></div>
         );
